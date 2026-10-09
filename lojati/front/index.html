@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LojaTI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LojaTI</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#cadastro">Cadastro</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <h2>Tecnologia para você!</h2>
+        <p>Na LojaTI, você encontra produtos de tecnologia para facilitar o seu dia a dia. <br> Oferecemos acessórios para computadores, como teclados, mouses, headsets e monitores, com qualidade e preços acessíveis. <br> Nosso objetivo é trazer praticidade e tecnologia para você!</p>
+        <a href="#produtos" class="botao">Ver produtos</a>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos produtos</h2>
+
+        <div class="produtos">
+
+            <div class="produto">
+                <div class="imagem"><img src="teclado.jpg"></div>
+                <h3>Teclado</h3>
+                <p>Ideal para estudar e jogar.</p>
+                <span>R$ 120,00</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <div class="imagem"><img src="mouse.jpg" alt="Mouse"></div>
+                <h3>Mouse</h3>
+                <p>Conforto para o dia a dia.</p>
+                <span>R$ 80,00</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <div class="imagem"><img src="headset.jpg" alt="Headset"></div>
+                <h3>Headset</h3>
+                <p>Som e comunicação de qualidade.</p>
+                <span>R$ 150,00</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <div class="imagem"><img src="monitor.jpg" alt="Monitor"></div>
+                <h3>Monitor</h3>
+                <p>Mais espaço para suas tarefas.</p>
+                <span>R$ 700,00</span>
+                <button>Comprar</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="cadastro">
+        <h2>Cadastro de cliente</h2>
+        <p>Preencha seus dados para se cadastrar.</p>
+
+        <form action="index.php?rota=cliente/create" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="Nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="Email" placeholder="seuemail@email.com" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="Telefone" placeholder="Seu telefone">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>LojaTI | Tecnologia ao seu alcance</p>
+    </footer>
+</body>
+</html>
